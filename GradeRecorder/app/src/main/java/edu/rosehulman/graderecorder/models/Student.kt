@@ -1,9 +1,9 @@
-package edu.rosehulman.graderecorder
+package edu.rosehulman.graderecorder.models
 
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.Exclude
 
-class Student(
+data class Student(
     var courseId: String="",
     var firstName: String="",
     var lastName: String="",

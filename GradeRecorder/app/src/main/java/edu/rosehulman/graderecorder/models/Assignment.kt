@@ -1,9 +1,9 @@
-package edu.rosehulman.graderecorder
+package edu.rosehulman.graderecorder.models
 
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.Exclude
 
-class Assignment(
+data class Assignment(
     var courseId: String="",
     var name: String="",
     var maxGrade: Double=0.0) {
