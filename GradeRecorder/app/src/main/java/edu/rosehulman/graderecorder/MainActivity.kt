@@ -40,9 +40,10 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                // TODO: Use deep query.
+                // TODO: Write. Hint: Use FieldPath in query.
+                getCoursesForOwner("boutell")
                 // TODO: Also add owner (must be both way)
-                getCoursesForOwner2("boutell")
+
                 return@OnNavigationItemSelectedListener true
             }
         }
