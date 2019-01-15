@@ -73,6 +73,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun getCoursesForOwner2(ownerName: String) {
+        // Don't use this method. Instead, write the method above using the course
+        // path.
 //        // Need to get owner.id for name. Sometimes this is done already.
           // If we need to get it, we can run into trouble. See definition of this
           // helper function below.
