@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 // I know this is kind of dumb since I know the name. But
                 // this method was called from a place where I did just have a
                 // course id.
-                getCourseNameForCourseId(idFromName("CSSE479"))
+                setCourseNameForCourseId(idFromName("CSSE479"))
                 // getAssignmentsInCourse(idFromName("CSSE374"))
                 return@OnNavigationItemSelectedListener true
             }
@@ -58,14 +58,15 @@ class MainActivity : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
-    private fun getStudentsInCourse(courseId: String) {
+    private fun getAssignmentsInCourse(courseId: String) {
+        // TODO: set message.text with the appropriate String.
     }
 
     private fun getCourseNameForCourseId(courseId: String) {
         // TODO: set message.text with the appropriate String.
     }
 
-    private fun getAssignmentsInCourse(courseId: String) {
+    private fun getStudentsInCourse(courseId: String) {
         // TODO: set message.text with the appropriate String.
     }
 
@@ -77,15 +78,15 @@ class MainActivity : AppCompatActivity() {
         // Don't use this method. Instead, write the method above using the course
         // path.
 //        // Need to get owner.id for name. Sometimes this is done already.
-          // If we need to get it, we can run into trouble. See definition of this
-          // helper function below.
+        // If we need to get it, we can run into trouble. See definition of this
+        // helper function below.
 //        var ownerId = getOwnerIdForName(ownerName)
-//        ownerRef.document(ownerName).get()
+//        ownersRef.document(ownerName).get()
 //            .addOnSuccessListener { snapshot: DocumentSnapshot ->
 //                val courseIds = snapshot["courses"] as Map<String, Boolean>
 //                val courses = ArrayList<Course>()
 //                for (courseId in courseIds.keys) {
-//                    courseRef.document(courseId).get()
+//                    coursesRef.document(courseId).get()
 //                        .addOnSuccessListener { courseSnapshot: DocumentSnapshot ->
 //                            val course = Course.fromSnapshot(courseSnapshot)
 //                            courses.add(course)
@@ -96,17 +97,9 @@ class MainActivity : AppCompatActivity() {
 //            }
     }
 
-    // How do we calculate this?
-//    private fun getOwnerIdForName(ownerName: String): String {
-//        ownerRef.get().addOnSuccessListener { snapshot: QuerySnapshot ->
-//            val owners = ArrayList<Owner>()
-//            for (document in snapshot.documents) {
-//                if (Owner.fromSnapshot(document).username == ownerName) {
-//                    return document.id
-//                }
-//            }
-//        }
-//    }
+    private fun addOwnerForCourse(ownerId: String, courseId: String) {
+        // TODO: add given owner to the given course.
+    }
 
     // Setup
     private fun pushInitialCourses() {
