@@ -4,15 +4,15 @@
     <item
             android:id="@+id/navigation_home"
             android:icon="@drawable/ic_home_black_24dp"
-            android:title="Students"/>
+            android:title="@string/assignments"/>
 
     <item
             android:id="@+id/navigation_dashboard"
             android:icon="@drawable/ic_dashboard_black_24dp"
-            android:title="Course Name"/>
+            android:title="@string/course_name"/>
 
     <item
             android:id="@+id/navigation_notifications"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="Add owner"/>
+            android:title="@string/add_owner"/>
 </menu>
