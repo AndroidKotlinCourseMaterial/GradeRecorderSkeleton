@@ -1,8 +1,8 @@
 package edu.rosehulman.graderecorder
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
 import edu.rosehulman.graderecorder.models.Assignment
 import edu.rosehulman.graderecorder.models.Course
